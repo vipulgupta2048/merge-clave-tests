@@ -1,0 +1,3 @@
+.balena/secrets
+exclave-control-center/node_modules
+testblockbot/node_modules

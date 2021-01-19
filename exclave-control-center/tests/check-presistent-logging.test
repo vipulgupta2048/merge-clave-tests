@@ -1,0 +1,4 @@
+[Test]
+ExecStart=/bin/bash -c "source /root/.bashrc; echo “journalctl --list-boots | wc -l ; exit” | balena ssh ${DEVICE_UUID}"
+Name=Check presistent logging
+Type=simple

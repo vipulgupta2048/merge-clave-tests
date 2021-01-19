@@ -1,0 +1,22 @@
+version: '2'
+
+volumes:
+  os-images:
+  cache:
+
+services:
+  exclave-control-center:
+    build: ./exclave-control-center
+    privileged: true
+    labels:
+      io.balena.features.balena-api: '1'
+      io.balena.features.supervisor-api: '1'
+      io.balena.features.dbus: '1'
+  testblockbot:
+    build: ./testblockbot
+    privileged: true
+    restart: always
+    volumes:
+      - os-images:/images
+    expose:
+      - "5001"

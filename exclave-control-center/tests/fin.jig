@@ -1,0 +1,6 @@
+[Jig]
+Name=presistent-logging Jig
+Description=development Jig 
+TestFile=/etc
+DefaultScenario=presistent-logging.scenario
+DefaultWorkingDirectory=./

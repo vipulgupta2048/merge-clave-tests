@@ -1,0 +1,4 @@
+[Test]
+ExecStart=balena env add RESIN_SUPERVISOR_PERSISTENT_LOGGING true --application socks
+Name=Activate presistent logging
+Type=simple
