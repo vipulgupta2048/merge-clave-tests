@@ -41,8 +41,7 @@ COPY . /usr/src/core/
 
 # enable execute permissions for scripts
 RUN chmod +x /usr/src/core/entry.sh && \
-    chmod +x /usr/src/core/logic/scripts/*.sh && \
-    apk add jq
+    chmod +x /usr/src/core/logic/scripts/*.sh 
     # chmod +x /usr/src/core/logic/scripts/*.bash
 
 CMD ["/usr/src/core/entry.sh"]
