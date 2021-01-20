@@ -1,5 +1,5 @@
 [Scenario]
 Name=Presistent logging Test
 Description=quick test inside container
-Tests=balena-os-configure, testbot-poweron-dut, activate-presistent-logging, balena-device-reboot, check-presistent-logging
+Tests=presistent-logging-check
 Timeout=5000
