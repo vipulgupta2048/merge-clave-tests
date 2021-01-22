@@ -10,7 +10,7 @@ ENV DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
 
 # hadolint ignore=DL3008, added nano for debugging, remove in final build
 RUN apk add --no-cache \
-    git \
+    git jq \
     ca-certificates \
     rust \
     cargo \
