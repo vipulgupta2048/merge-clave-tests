@@ -1,4 +1,4 @@
 [Test]
 ExecStart=/bin/bash -c "source /root/.bashrc; echo “journalctl --list-boots | wc -l ; exit” | balena ssh ${DUT_UUID}"
-Name=Check presistent logging
+Name=Check persistent logging
 Type=simple

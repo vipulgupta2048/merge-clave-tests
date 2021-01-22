@@ -30,8 +30,8 @@ const deviceFinder = async (appName = "socks-device") => {
         }
       }
     }
-    // console.log("Waiting 10 seconds for it to show up ...")
-    await wait(10000)
+    console.log("Waiting 20 seconds for it to show up ...")
+    await wait(20000)
   }
   console.log("Can't find any online devices. Exiting ...")
 }

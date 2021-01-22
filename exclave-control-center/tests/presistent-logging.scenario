@@ -1,5 +1,0 @@
-[Scenario]
-Name=Presistent logging Test
-Description=quick test inside container
-Tests=presistent-logging-check
-Timeout=5000
