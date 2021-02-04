@@ -1,6 +1,6 @@
 [Test]
 WorkingDirectory=/usr/src/core/logic/scripts
 ExecStart=./check-persistent-logging.sh
-Name=Activate presistent logging
+Name=Activate persistent logging
 Requires=testbot-poweron-dut
 Type=simple

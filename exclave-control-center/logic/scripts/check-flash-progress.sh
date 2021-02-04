@@ -1,6 +1,9 @@
 #!/bin/bash
 
-curl -s testblockbot:5001/flash?path=/images/raspberrypi3.img
+DEFAULTVALUE="/images/raspberrypi3.img"
+curl -s testblockbot:5001/flash?path="${1:-$defaultImagePath}"
+
+echo "Flashing ${1:-$defaultImagePath} on the DUT"
 
 while :; do
   progress=$(curl -s testblockbot:5001/flash-progress)
